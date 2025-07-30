@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+.clock-container {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.digital-clock {
+    margin-bottom: 30px;
+}
+
+#time {
+    font-size: 64px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 10px;
+    font-family: 'Courier New', monospace;
+}
+
+#date {
+    font-size: 24px;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 20px;
+}
+
+.timezone-selector {
+    margin-top: 20px;
+}
+
+.timezone-selector label {
+    color: white;
+    font-size: 1.2rem;
+    margin-right: 10px;
+}
+
+.timezone-selector select {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    font-size: 1rem;
+}
+
+.timezone-selector select option {
+    background: #333;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    #time {
+        font-size: 2.5rem;
+    }
+    
+    #date {
+        font-size: 1.2rem;
+    }
+    
+    .clock-container {
+        padding: 20px;
+    }
+}
+/* Additional styles for advanced features */
+.alarm-container {
+    margin-top: 20px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+.alarm-section h3 {
+    color: white;
+    margin-bottom: 15px;
+}
+
+.alarm-section input, .alarm-section button {
+    margin: 5px;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+}
+
+.alarm-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 5px 0;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    color: white;
+}
+
+.format-toggle {
+    margin-top: 15px;
+}
+
+.format-toggle label {
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
