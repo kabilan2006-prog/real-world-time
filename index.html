@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-Time Clock</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="clock-container">
+            <div class="digital-clock">
+                <div id="time">00:00:00</div>
+                <div id="date">Loading...</div>
+            </div>
+            <div class="timezone-selector">
+                <label for="timezone">Timezone:</label>
+                <select id="timezone">
+                    <option value="America/New_York">New York</option>
+                    <option value="Europe/London">London</option>
+                    <option value="Asia/Tokyo">Tokyo</option>
+                    <option value="Asia/Kolkata">India</option>
+                    <option value="Australia/Sydney">Sydney</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="advance.js"></script>
+</body>
+</html>
